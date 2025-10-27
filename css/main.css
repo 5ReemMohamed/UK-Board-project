@@ -31,7 +31,9 @@ html{
 .navbar-brand span {
   color: #193750;
   font-weight: bold;
+  font-size: 10px;
 }
+
 
 .navbar-nav .nav-link {
   color: #193750;
@@ -295,10 +297,11 @@ header {
   padding: 0px 17px;
  }
  .about-section .content small{
-  font-size: 18px;
+  font-size: 11px;
   font-weight: 700;
   color: #b71c10;
  }
+
   .about-section .content  h2{
     color: #14334c;
     font-size: 45px;
@@ -428,9 +431,21 @@ header {
   }
 }
 .feature-left h3{
-  font-size: 28px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   color: #eec43c;
+}
+ @media screen and (min-width:540px) {
+  .navbar-brand span {
+  font-size: 16px;
+}
+ .about-section .content small{
+  font-size: 18px;
+ }
+ .feature-left h3{
+  font-size: 28px;
+
+}
 }
 .feature-left p{
   max-width: 90%;
@@ -464,68 +479,6 @@ header {
 }
 
 /* End Features */
-/* start team */
-.team-section{
-  background-image: url(../images/team-bg.png);
-  background-repeat: no-repeat;
-  background-position: right bottom;
-}
-.team-card {
- text-align: center;
-    padding: 50px 30px;
-    background-color: #163c5b07;
-    border: 1px solid #E0E5EB;
-    border-radius: 35px 0px 35px 0px;
-        transition: all 0.3s ease-in-out;
-
-}
-.team-card .team-thumb-wrap {
-    height: 200px;
-    width: 200px;
-    border: 1px solid #E0E5EB;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    transition: all 0.3s ease-in-out;
-}
-.team-card:hover{
- border: 1px solid #b89d44; 
-}
-.team-card .team-thumb-wrap img {
-    height: 172px;
-    width: 172px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-.team-card:hover .team-thumb-wrap{
-  border: 1px solid #b5170c;
-}
-.team-card .social-list a {
-    text-decoration: none;
-    color:#b69a41 ;
-    height: 40px;
-    width: 40px;
-    border: 1px solid #E0E5EB;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-
-}
-.team-card .social-list a:hover {
-color: white;
-background-color: #b69a41;
-border: 1px solid #b69a41;
-}
-.team-card p{
-  color: #b5170c;
-  font-weight: 500;
-}
-/* end team */
 
 /* start achievements */
 .achievement-section {
