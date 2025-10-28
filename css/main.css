@@ -389,7 +389,31 @@ header {
 }
 
 /* end services */
+/* counter */
+.counter-box {
+  background-color: #193750;
+  color: #fff;
+  padding: 30px;
+  height: 160px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.counter-box h3 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  color: #ffd446;
+  font-weight: bold;
+}
 
+.counter-box small {
+  font-size: 0.75rem;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
 /* start Features */
 .features {
   background-color: #193750;
@@ -798,22 +822,24 @@ footer ul li a:hover{
   gap: 15px;
   z-index: 1050;
 }
-.whatsapp-button{
+.email-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #d44638; 
+  color: #fff;
+  font-size: 24px;
+  border-radius: 50%;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
-  background-color: #25D366; 
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  font-size: 22px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
 
-
-.whatsapp-button:hover {
-  background-color: #1da851;
+.email-button:hover {
+  background-color: #b23121;
 }
